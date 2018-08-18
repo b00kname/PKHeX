@@ -1,7 +1,6 @@
 language: csharp
 solution: PKHeX.sln
 install:
- - nuget 4.1.0
  - nuget restore PKHeX.sln -Verbosity detailed
  - nuget update PKHeX.sln -Verbosity detailed
 mono: 5.8.0
