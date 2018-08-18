@@ -1,0 +1,6 @@
+language: csharp
+solution: PKHeX.sln
+script:
+ - ./build.sh
+ - ./test.sh
+ - grep "Test Results" build.log
