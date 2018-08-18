@@ -3,4 +3,4 @@ solution: PKHeX.sln
 install:
   - curl -L -o nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
   - mono nuget.exe restore PKHeX.sln
-mono: 5.8.0
+mono: 5.14.0
