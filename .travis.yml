@@ -1,5 +1,2 @@
 language: csharp
 solution: PKHeX.sln
-script:
- - ./Tests/PKHeX.Tests/PKM/PKMTests.cs
- - grep "Test Results" build.log
