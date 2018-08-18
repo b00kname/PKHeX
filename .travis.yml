@@ -1,3 +1,4 @@
 language: csharp
 solution: PKHeX.sln
+install: nuget restore PKHeX.sln
 mono: 5.8.0
