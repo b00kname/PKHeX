@@ -1,4 +1,4 @@
 language: csharp
 solution: PKHeX.sln
-install: msbuild /t:restore /p:RestoreSources=xxx /tv:15.0 /t:Rebuild /p:Configuration=Release
+install: msbuild /t:restore /p:RestoreSources=/home/travis/build/kkloh98/PKHeX/PKHeX.Core/obj/project.assets.json /tv:15.0 /t:Rebuild /p:Configuration=Release
 mono: 5.8.0
