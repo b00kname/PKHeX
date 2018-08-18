@@ -1,6 +1,5 @@
 language: csharp
 solution: PKHeX.sln
 script:
- - ./build.sh
- - ./test.sh
+ - ./Tests/PKHeX.Tests/PKM/PKMTests.cs
  - grep "Test Results" build.log
