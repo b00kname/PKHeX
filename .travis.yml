@@ -1,4 +1,6 @@
 language: csharp
 solution: PKHeX.sln
-install: nuget restore PKHeX.sln
+install:
+ - nuget restore PKHeX.sln
+ - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
 mono: 5.8.0
