@@ -89,7 +89,7 @@ namespace PKHeX.Tests
             var pk = new PK7();
 
             // Ensure setting to null zeros the components
-            // -- Set to something else first
+            // -- Set to a default value(dummy data) first
             pk.Met_Day = 12;
             pk.Met_Month = 12;
             pk.Met_Year = 12;
@@ -102,7 +102,7 @@ namespace PKHeX.Tests
 
             // Ensure setting to a date sets the components
             var now = DateTime.UtcNow;
-            // -- Set to something else first
+            // -- Set to a default value(dummny data) first
             pk.Met_Day = 12;
             pk.Met_Month = 12;
             pk.Met_Year = 12;
@@ -146,7 +146,7 @@ namespace PKHeX.Tests
             var pk = new PK7();
 
             // Ensure setting to null zeros the components
-            // -- Set to something else first
+            // -- Set to a default value(dummy data) first
             pk.Egg_Day = 12;
             pk.Egg_Month = 12;
             pk.Egg_Year = 12;
@@ -159,7 +159,7 @@ namespace PKHeX.Tests
 
             // Ensure setting to a date sets the components
             var now = DateTime.UtcNow;
-            // -- Set to something else first
+            // -- Set to a default value(dummy data) first
             pk.Egg_Day = 12;
             pk.Egg_Month = 12;
             pk.Egg_Year = 12;
