@@ -38,7 +38,7 @@ namespace PKHeX.Tests
                 0xC9, 0x30, // ド
                 0xE9, 0x30, // ラ
                 0xF3, 0x30, // ン
-                0x40, 0x28, // ♀
+                0x40, 0x26, // ♀
                 0x00, 0x00, // \0 terminator
             };
             CheckStringGetSet(nameof(pkm.Nickname), name_nidoran, pkm.Nickname, byte_nidoran, pkm.Nickname_Trash);
@@ -108,7 +108,8 @@ namespace PKHeX.Tests
             pk.Met_Year = 12;
             if (now.Month == 12)
             {
-                // We don't want the test to work just because it's 12/12 right now.
+                // We do not want the test to work just because it's 12/12 right now.
+                // We do not want the test to work just because it's 12/12 right now.
                 pk.Met_Month = 11;
             }
             // -- Act
@@ -164,7 +165,7 @@ namespace PKHeX.Tests
             pk.Egg_Year = 12;
             if (now.Month == 12)
             {
-                // We don't want the test to work just because it's 12/12 right now.
+                // We do not want the test to work just because it's 12/12 right now.
                 pk.Egg_Month = 11;
             }
             // -- Act
