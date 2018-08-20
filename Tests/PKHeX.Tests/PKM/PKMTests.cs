@@ -153,9 +153,9 @@ namespace PKHeX.Tests
             // -- Act
             pk.EggMetDate = null;
             // -- Assert
-            Assert.AreEqual(0, pk.Egg_Day, "Egg_Day was not zeroed when EggMetDate is set to null");
-            Assert.AreEqual(0, pk.Egg_Month, "Egg_Month was not zeroed when EggMetDate is set to null");
-            Assert.AreEqual(0, pk.Egg_Year, "Egg_Year was not zeroed when EggMetDate is set to null");
+            Assert.AreEqual(0, pk.Egg_Day, "Egg_Day was not zero-ed when EggMetDate is set to null");
+            Assert.AreEqual(0, pk.Egg_Month, "Egg_Month was not zero-ed when EggMetDate is set to null");
+            Assert.AreEqual(0, pk.Egg_Year, "Egg_Year was not zero-ed when EggMetDate is set to null");
 
             // Ensure setting to a date sets the components
             var now = DateTime.UtcNow;
