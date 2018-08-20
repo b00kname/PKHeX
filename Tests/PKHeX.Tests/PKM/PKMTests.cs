@@ -96,9 +96,9 @@ namespace PKHeX.Tests
             // -- Act
             pk.MetDate = null;
             // -- Assert
-            Assert.AreEqual(0, pk.Met_Day, "Met_Day was not zeroed when MetDate is set to null");
-            Assert.AreEqual(0, pk.Met_Month, "Met_Month was not zeroed when MetDate is set to null");
-            Assert.AreEqual(0, pk.Met_Year, "Met_Year was not zeroed when MetDate is set to null");
+            Assert.AreEqual(0, pk.Met_Day, "Met_Day was not zero-ed when MetDate is set to null");
+            Assert.AreEqual(0, pk.Met_Month, "Met_Month was not zero-ed when MetDate is set to null");
+            Assert.AreEqual(0, pk.Met_Year, "Met_Year was not zero-ed when MetDate is set to null");
 
             // Ensure setting to a date sets the components
             var now = DateTime.UtcNow;
