@@ -110,7 +110,7 @@ namespace PKHeX.WinForms
         {
             showChangelog = false;
             BAKprompt = false;
-
+            
             CB_MainLanguage.Items.AddRange(main_langlist);
             HaX = args.Any(x => string.Equals(x.Trim('-'), nameof(HaX), StringComparison.CurrentCultureIgnoreCase))
                 || Path.GetFileNameWithoutExtension(Process.GetCurrentProcess().MainModule.FileName).EndsWith(nameof(HaX));
@@ -1099,8 +1099,8 @@ namespace PKHeX.WinForms
             if (pb == dragout) dragout.ContextMenuStrip.Enabled = pk.Species != 0 || HaX; // Species
 
             pb.Image = pk.Sprite(C_SAV.SAV, -1, -1, true);
-            if (pb.BackColor == Color.Red)
-                pb.BackColor = Color.Transparent;
+            if (pb.BackColor == Color.Blue)
+                pb.BackColor = Color.Yellow;
         }
 
         private void PKME_Tabs_UpdatePreviewSprite(object sender, EventArgs e) => GetPreview(dragout);
